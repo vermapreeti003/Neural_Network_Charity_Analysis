@@ -10,10 +10,20 @@ The IS_SUCCESSFUL column is considered the target for my model.
 The APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT, and ASK_AMT columns are considered to be the features of my model.
 The EIN, NAME, STATUS, and SPECIAL_CONSIDERATION columns are neither targets nor features and should be removed from the input data.
 
+
+![sss1](https://user-images.githubusercontent.com/111541268/213537575-bf66d919-89c0-4592-ae4f-a08465959e8b.png)
+
+
+
 ### Compiling, Training, and Evaluating the Model
  * I selected 120 neurons with a sigmoid function for my first layer, 50 nuerons with a ReLU function for the second, and 18 neurons with for the third, and a sigmoid        function for the outer layer. I chose to change the activation function for the first layer because it increased the model's performance.
  * I only achieved an accuracy of 69% and was not able to achieve the target model performance.
  * I tried to increase the model performance by dropping more columns, creating more bins for rare occurances in columns, decreasing the number of values in some bins,      adding more neurons to the hidden layers, using a differnet activation function, and increasing the number of epochs.
+
+
+![sss2](https://user-images.githubusercontent.com/111541268/213537690-37ecbf5c-4494-42d8-99e8-4b258e11f67c.png)
+
+
 ## Summary
 Through the removal of noisy features, additional neurons and hidden layers and changed activation functions, the accuracy of my optimized model for predicting whether a donation is successful ended up being 0.6633 and its loss metric was 1.13676.
 
